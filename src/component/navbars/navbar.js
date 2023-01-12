@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Container, Navbar, Nav, Form } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBagShopping } from "@fortawesome/free-solid-svg-icons";
-import { Modal, Button } from "react-bootstrap";
+import Modals from "../login/modal";
 
 const Navbars = () => {
   const [show, setShow] = useState(false);
@@ -52,32 +52,8 @@ const Navbars = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <Modals show={show} handleClose={handleClose} />
       </Navbar>
-      <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Login</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer></Modal.Footer>
-      </Modal>
     </>
   );
 };

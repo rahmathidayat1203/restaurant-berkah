@@ -1,0 +1,7 @@
+.createdAccountLink {
+  text-decoration: none;
+  color: black;
+}
+.createdAccountLink:hover {
+  color: #d15b0c;
+}
