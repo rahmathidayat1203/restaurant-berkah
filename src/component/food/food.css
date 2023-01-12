@@ -1,0 +1,17 @@
+.food {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.foodlist-blocks .card-img-top {
+  border-radius: 50%;
+}
+.foodlist-blocks .card {
+  border-radius: 50%;
+}
+.foodClick {
+  text-decoration: none;
+  color: black;
+}
+.foodClick:hover {
+  color: black;
+}

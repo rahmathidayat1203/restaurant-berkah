@@ -1,0 +1,9 @@
+.image-about img {
+  border-radius: 100%;
+  width: 80%;
+}
+.about-banner {
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgb(255, 237, 71);
+}
