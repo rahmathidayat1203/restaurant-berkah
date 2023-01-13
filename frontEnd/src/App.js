@@ -1,9 +1,13 @@
-import Body from "./component/body/body";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./routes/routing";
+
 const App = () => {
   return (
     <>
-      <Body />
+      <BrowserRouter>
+        <Routing />
+      </BrowserRouter>
     </>
   );
 };

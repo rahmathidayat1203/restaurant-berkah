@@ -62,6 +62,7 @@
 .jumbotron {
   margin-top: 1rem;
   padding: 2rem;
+  position: relative;
 }
 
 .banner {
@@ -78,4 +79,45 @@
 
 .jumbotron .tag-line {
   padding: 5rem;
+}
+.image-decoration {
+  animation: MoveUpDown 3s ease-in-out infinite;
+  position: absolute;
+  width: 8%;
+  right: 80px;
+  bottom: 10px;
+  transform: rotate(45deg);
+  /* transform: translate(-50%, -50%); */
+}
+.image-decoration-2 {
+  animation: MoveUpDown2 3s ease-in-out infinite;
+  position: absolute;
+  width: 6%;
+  right: 47%;
+  bottom: 10px;
+  transform: rotate(-45deg);
+  /* transform: translate(-50%, -50%); */
+}
+
+@keyframes MoveUpDown2 {
+  from {
+    transform: rotate(-45deg) translate(0, 0px);
+  }
+  65% {
+    transform: rotate(-45deg) translate(0, 15px);
+  }
+  to {
+    transform: rotate(-45deg) translate(0, -0px);
+  }
+}
+@keyframes MoveUpDown {
+  from {
+    transform: rotate(45deg) translate(0, 0px);
+  }
+  65% {
+    transform: rotate(45deg) translate(0, 15px);
+  }
+  to {
+    transform: rotate(45deg) translate(0, -0px);
+  }
 }

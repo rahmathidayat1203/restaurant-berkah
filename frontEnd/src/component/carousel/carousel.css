@@ -1,0 +1,12 @@
+.images-carousel {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: tomato;
+  margin-bottom: 20px;
+}
+/* .images-carousel img {
+  width: 98%;
+} */
+.carousel {
+}
