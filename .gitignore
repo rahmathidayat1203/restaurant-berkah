@@ -11,7 +11,9 @@
 
 # production
 /frontEnd/build
-
+//env
+/frontEnd/.env
+/backEnd/.env
 # misc
 /frontEnd/.DS_Store
 /frontEnd/.env.local
