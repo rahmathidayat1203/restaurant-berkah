@@ -1,33 +1,33 @@
 .button-65 {
-  appearance: none;
-  backface-visibility: hidden;
-  background-color: #e7620a;
-  border-radius: 10px;
-  border-style: none;
-  box-shadow: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  height: 50px;
-  letter-spacing: normal;
-  line-height: 1.5;
-  outline: none;
-  overflow: hidden;
-  padding: 14px 30px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
+  appearance: none !important;
+  backface-visibility: hidden !important;
+  background-color: #e7620a !important;
+  border-radius: 10px !important;
+  border-style: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  height: 50px !important;
+  letter-spacing: normal !important;
+  line-height: 1.5 !important;
+  outline: none !important;
+  overflow: hidden !important;
+  padding: 14px 30px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  transform: translate3d(0, 0, 0) !important;
+  transition: all 0.3s !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  vertical-align: top !important;
+  white-space: nowrap !important;
 }
 
 .button-65:hover {
@@ -73,7 +73,9 @@
   background-color: rgb(255, 237, 71);
 }
 .banner-image {
-  width: 80%;
+  width: 400px;
+  height: 400px;
+  margin-left: 50px;
   border-radius: 100%;
 }
 
@@ -93,7 +95,7 @@
   animation: MoveUpDown2 3s ease-in-out infinite;
   position: absolute;
   width: 6%;
-  right: 47%;
+  right: 45%;
   bottom: 10px;
   transform: rotate(-45deg);
   /* transform: translate(-50%, -50%); */

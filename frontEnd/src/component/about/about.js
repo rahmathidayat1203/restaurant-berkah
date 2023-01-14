@@ -1,6 +1,4 @@
 import { Container, Col, Row, Image } from "react-bootstrap";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowDown, faStore } from "@fortawesome/free-solid-svg-icons";
 import "./about.css";
 
 const About = () => {

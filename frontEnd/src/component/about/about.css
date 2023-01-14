@@ -1,6 +1,7 @@
 .image-about img {
   border-radius: 100%;
-  width: 80%;
+  width: 350px;
+  height: 350px;
 }
 .about-banner {
   padding: 2rem;

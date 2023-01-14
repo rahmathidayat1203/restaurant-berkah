@@ -21,13 +21,13 @@ const Navbars = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-items-center">
-              <Nav.Link href="*" className="active fw-semibold">
+              <Nav.Link href="/" className="active fw-semibold">
                 Home
               </Nav.Link>
               <Nav.Link className="fw-semibold" href="#popular">
                 Popular Menu
               </Nav.Link>
-              <Nav.Link href="#delivery" className="fw-semibold">
+              <Nav.Link href="/delivery" className="fw-semibold">
                 Delivery
               </Nav.Link>
               <Nav.Link href="#about" className="fw-semibold">

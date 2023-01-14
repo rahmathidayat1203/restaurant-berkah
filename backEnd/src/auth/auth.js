@@ -2,7 +2,9 @@ const { PrismaClient } = require("@prisma/client");
 const { body, validationResult } = require("express-validator");
 
 const prisma = new PrismaClient();
-const LoginAuth = [
+const RegisterAuth = [
+  body("first_name").notEmpty().withMessage("this field is required"),
+  body("last_name").notEmpty().withMessage("this field is required"),
   body("email").isEmail().withMessage("enter valid email"),
   body("email")
     .custom(async (email) => {
@@ -18,7 +20,6 @@ const LoginAuth = [
     .withMessage("Email is already registered"),
   (req, res, next) => {
     const errors = validationResult(req);
-    // console.log(req.body.email);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.mapped() });
     }
@@ -26,4 +27,16 @@ const LoginAuth = [
   },
 ];
 
-module.exports = { LoginAuth };
+const LoginAuth = [
+  body("email").notEmpty().withMessage("this field is required"),
+  body("password").notEmpty().withMessage("this field is required"),
+  (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.mapped() });
+    }
+    next();
+  },
+];
+
+module.exports = { RegisterAuth, LoginAuth };

@@ -15,14 +15,14 @@ const Modals = (props) => {
     loginFormData.append("password", formValue.password);
 
     console.log(formValue);
-
+    console.log(process.env.PUBLIC_URL);
     axios
-      .post("http://localhost:3001/user", {
+      .post(process.env.REACT_APP_API_URL + "/user", {
         email: formValue.email,
         password: formValue.password,
       })
       .then((res) => {
-        console.log(res.data);
+        console.log(res.status);
       })
       .catch((error) => {
         console.log(error);

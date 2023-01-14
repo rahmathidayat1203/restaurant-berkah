@@ -8,21 +8,43 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-}
-
-model Role {
+}model Role {
   id   Int     @id @default(autoincrement())
   role String
   user Users[]
 }
 
+model Food {
+  id            Int       @id @default(autoincrement())
+  foodId        String    @unique
+  foodName      String
+  foodImagePath String
+  priceFood     Float
+  quantityFood  Int
+  createdAt     DateTime?
+  updatedAt     DateTime?
+  order         Order[]
+}
+
+model Order {
+  id        Int       @id @default(autoincrement())
+  orderId   String
+  usersId   String
+  users     Users     @relation(fields: [usersId], references: [id])
+  foodId    String
+  food      Food      @relation(fields: [foodId], references: [foodId])
+  createdAt DateTime?
+  updatedAt DateTime?
+}
 model Users {
-  id        String @id
-  name      String
+  id        String    @id
+  firstName String
+  lastName  String
   email     String    @unique
   password  String
   roleId    Int
   role      Role      @relation(fields: [roleId], references: [id])
   createdAt DateTime?
   updatedAt DateTime?
+  order     Order[]
 }

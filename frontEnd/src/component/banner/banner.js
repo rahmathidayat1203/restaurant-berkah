@@ -15,9 +15,9 @@ const Banner = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. A cras semper auctor
                     neque vitae tempus quam pellentesque. Justo nec ultrices dui sapien eget mi.
                   </h6>
-                  <button className="button-65" type="button" href="#discover">
+                  <a className="btn button-65" type="button" href="/discover-menu">
                     Discover Menu
-                  </button>
+                  </a>
                 </div>
               </div>
             </Col>

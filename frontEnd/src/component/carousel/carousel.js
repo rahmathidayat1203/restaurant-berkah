@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { Image } from "react-bootstrap";
 import "./carousel.css";
 const Carousel = () => {
   const settings = {
